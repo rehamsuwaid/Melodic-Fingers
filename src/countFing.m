@@ -40,7 +40,7 @@ while runloop
     
     runloop=isOpen(videoplayer);%checking video player is open or closed
     noteGen(nof);
-    pause(2);
+    pause(1);
 end
 clear cam;
 release(videoplayer);
