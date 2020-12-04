@@ -1,15 +1,8 @@
-clear;
-clc;
-cam = webcam('Microsoft® LifeCam Cinema(TM)');
-preview(cam);
-
-videoframe = snapshot(cam);
-frameSize = size(videoframe);
-videoplayer = vision.VideoPlayer('Position',[100 100 [frameSize(2), frameSize(1)]]);
-runloop = true;
+ runloop = true;
+            %%
 
 while runloop
-    img = snapshot(cam);
+    img = getsnapshot(vid);
     img = rgb2gray(img);
     img = imresize(img,[480,640]);
     img1 = imcomplement(imbinarize(img));
@@ -34,14 +27,13 @@ while runloop
     
     nofs= num2str(nof);
     %insert text with no of fingers
-    imgfogrgb = insertText(imgfog, [0,0],nofs,'FontSize',30,'BoxColor','yellow','BoxOpacity',1,'TextColor','red');
+   % imgfogrgb = insertText(imgfog, [0,0],nofs,'FontSize',30,'BoxColor','yellow','BoxOpacity',1,'TextColor','red');
     
-    step(videoplayer, imgfogrgb);
+    %step(videoplayer, imgfogrgb);
     
-    runloop=isOpen(videoplayer);%checking video player is open or closed
+   % runloop=isOpen(videoplayer);%checking video player is open or closed
     noteGen(nof);
-    pause(1);
+    pause(2);
 end
-clear cam;
+%clear cam;
 release(videoplayer);
-    
