@@ -26,12 +26,7 @@ while runloop
     imgfog = uint8(255.*imgfo);
     
     nofs= num2str(nof);
-    %insert text with no of fingers
-   % imgfogrgb = insertText(imgfog, [0,0],nofs,'FontSize',30,'BoxColor','yellow','BoxOpacity',1,'TextColor','red');
-    
-    %step(videoplayer, imgfogrgb);
-    
-   % runloop=isOpen(videoplayer);%checking video player is open or closed
+   
     noteGen(nof);
     pause(2);
 end
