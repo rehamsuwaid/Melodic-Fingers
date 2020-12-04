@@ -11,25 +11,25 @@
 %
 %Creative Commons 0: http://creativecommons.org/publicdomain/zero/1.0/
 function noteGen(n)
-if (n==0)
-    [y,Fs] = audioread('c-6.ogg');
-    sound(y,Fs);
-elseif (n==1)
-    [y,Fs] = audioread('c-5.ogg');
-    sound(y,Fs); 
-elseif (n==2)
-    [y,Fs] = audioread('b7.ogg');
-    sound(y,Fs);
-elseif (n==3)
-    [y,Fs] = audioread('b6.ogg');
-    sound(y,Fs);
-elseif (n==4)
-    [y,Fs] = audioread('b4.ogg');
-    sound(y,Fs);
-else
-    [y,Fs] = audioread('b4.ogg');
-    sound(y,Fs);
-end 
+    if (n==0)
+        [y,Fs] = audioread('c-6.ogg');
+        sound(y,Fs);
+    elseif (n==1)
+        [y,Fs] = audioread('c-5.ogg');
+        sound(y,Fs); 
+    elseif (n==2)
+        [y,Fs] = audioread('b7.ogg');
+        sound(y,Fs);
+    elseif (n==3)
+        [y,Fs] = audioread('b6.ogg');
+        sound(y,Fs);
+    elseif (n==4)
+        [y,Fs] = audioread('b4.ogg');
+        sound(y,Fs);
+    elseif (n==5)
+        [y,Fs] = audioread('b6.ogg');
+        sound(y,Fs);
+    end 
         
 end
 
