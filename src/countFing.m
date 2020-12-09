@@ -1,4 +1,4 @@
- runloop = true;
+global runloop;
             %%
 
 while runloop
@@ -31,4 +31,3 @@ while runloop
     pause(2);
 end
 %clear cam;
-release(videoplayer);
