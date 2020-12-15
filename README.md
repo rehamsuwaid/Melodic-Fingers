@@ -4,9 +4,22 @@
 
 ## How to use
 
-1. download code and open with matlab
-2. run the HandGApp.mlapp to run the whole program
-3. if it's not working due to camera or laptop issues, make sure all nessecary add-ons are there, indicated in error message.
-4. File indications: 
+1. Download the zip file or clone the repository.
+
+2. Make sure you have the following tools installed in your MatLab before trying to run the program.
+    - Computer Vision Toolbox
+    - Image Processing Toolbox
+    - MATLAB Support Package for USB Webcams
+    
+3. As for the hardware requirments:
+    - Microsoft® LifeCam Cinema(TM)
+    - Stand for Camera
+    - monochrome background(white or off-white color) 
+
+> Side Note: Make sure to have the camera positioned on a fixed distance (18-20) cm far from  facing a monochrome surface with a contrasting difference between the hand and surface color(white, off-white) in order to get accurate results.
+
+4. Run the `HandGApp.mlapp` to execute the program.
+
+5. Files indications:
 
 
