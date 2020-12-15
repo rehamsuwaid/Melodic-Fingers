@@ -26,9 +26,9 @@ When you open the `src` folder, you can find 4 main folders:
 
 1. `countFing.m` which contains the script that will be processing the video frames and counting the fingers we show to the webcam in real-time, inside of it we call  `noteGen.m`  accordingly.
 
-2.  `noteGen.m` is a function that generates a note and takes an argument - that will be used when it will be called in the `countFing.m` - as the number of fingers. It uses a basic if-else statement then calls another audio file with a specific note corresponding to the number of fingers.
+2. `noteGen.m` is a function that generates a note and takes an argument - that will be used when it will be called in the `countFing.m` - as the number of fingers. It uses a basic if-else statement then calls another audio file with a specific note corresponding to the number of fingers.
 
-3. `HandGApp.mlapp` is an app designer file that implements the main window of our application graphical interface. We run the `countFing.m` in it `run("countFing.m");` when the user presses on ___Camera on___.
+3. `HandGApp.mlapp` is an app designer file that implements the main window of our application graphical interface. We run the `countFing.m` in it by calling it using a *run* function `run("countFing.m");` when the user presses on ___Camera on___.
 
 4. `Instructions.mlapp` another app designer file that displays instructions on how to use the application, which will get displayed when the user presses the ___instructions___ button in the main window.
 
