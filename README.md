@@ -20,7 +20,7 @@
 
 4. Run the `HandGApp.mlapp` to execute the program.
 
-## Files indications:
+## File descriptions:
 
 When you open the `src` folder, you can find 4 main folders:
 
