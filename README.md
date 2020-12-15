@@ -11,22 +11,22 @@
     - Image Processing Toolbox
     - MATLAB Support Package for USB Webcams
     
-3. As for the hardware requirments:
+3. As for the hardware requirements:
     - Microsoft® LifeCam Cinema(TM)
     - Stand for Camera
     - monochrome background(white or off-white color) 
 
-> Side Note: Make sure to have the camera positioned on a fixed distance (18-20) cm far from  facing a monochrome surface with a contrasting difference between the hand and surface color(white, off-white) in order to get accurate results.
+> Side Note: Make sure to have the camera positioned on a fixed distance (18-20) cm far from a monochrome surface with a contrasting difference between your hand and surface color(white, off-white) in order to get accurate results.
 
 4. Run the `HandGApp.mlapp` to execute the program.
 
-## File descriptions:
+## File descriptions
 
 When you open the `src` folder, you can find 4 main folders:
 
-1. `countFing.m` which contains the script that will be processing the video frames and counting the fingers we show to the webcam in real-time and inside of it we call  `noteGen.m`  accordingly.
+1. `countFing.m` which contains the script that will be processing the video frames and counting the fingers we show to the webcam in real-time. Inside of it we call  `noteGen.m`  accordingly.
 
-2.  `noteGen.m` A function that generates a note and takes an argument - that will be used when it will be called in the `countFing.m` - as the number of fingers. After that, it uses a basic if-else statement then calls another audio file with a specific note corresponding to the number of fingers.
+2.  `noteGen.m` A function that generates a note and takes an argument - that will be used when it will be called in the `countFing.m` - as the number of fingers. It uses a basic if-else statement then calls another audio file with a specific note corresponding to the number of fingers.
 
 3. `HandGApp.mlapp` is an app designer file that implements the main window of our application graphical interface. We run the `countFing.m`  in it by calling like this `run("countFing.m");` when the user presses on ___Camera on___.
 
